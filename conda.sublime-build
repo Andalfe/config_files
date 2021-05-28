@@ -1,0 +1,7 @@
+{	
+	"target": "terminus_exec",
+	"cancel": "terminus_cancel_build",
+    "cmd": ["C:\\ProgramData\\Anaconda3\\python.exe", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
