@@ -17,11 +17,17 @@ imap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
 
 
 
-" nnoremap <F9> :w <bar>: !g++ -o %:r.out %  && ./%:r.out <CR>
 
-nnoremap <F9> :w <bar>:!clear <CR> : !g++ -o %:r.out %  && ./%:r.out <CR>
+" nnoremap <F2> :w <bar>:!clear <CR> : !g++ -o %:r.out %  && ./%:r.out <CR>
+nnoremap <F2> :w <bar>:!clear  && g++ -o %:r.out %  && ./%:r.out <CR>
 
-
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 
 set tabstop=4
