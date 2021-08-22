@@ -11,6 +11,16 @@ set scrolloff=7
 set backspace=indent,eol,start
 
 
+nmap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
+
+imap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
+
+
+
+" nnoremap <F9> :w <bar>: !g++ -o %:r.out %  && ./%:r.out <CR>
+
+nnoremap <F9> :w <bar>:!clear <CR> : !g++ -o %:r.out %  && ./%:r.out <CR>
+
 
 
 
@@ -31,12 +41,12 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'vim-airline/vim-airline-themes'
 
-"Plug 'morhetz/gruvbox'
+Plug 'morhetz/gruvbox'
 
 
 Plug 'preservim/nerdtree'
 
-
+Plug 'KarimElghamry/vim-auto-comment'
 
 call plug#end()
 
