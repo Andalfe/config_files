@@ -11,15 +11,19 @@ set scrolloff=7
 set backspace=indent,eol,start
 
 
-nmap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
+nmap <F4> <Esc>:w<CR>:!clear;python3 %<CR>
 
-imap <F5> <Esc>:w<CR>:!clear;python3 %<CR>
-
-
+imap <F4> <Esc>:w<CR>:!clear;python3 %<CR>
 
 
-" nnoremap <F2> :w <bar>:!clear <CR> : !g++ -o %:r.out %  && ./%:r.out <CR>
+
+
 nnoremap <F2> :w <bar>:!clear  && g++ -o %:r.out %  && ./%:r.out <CR>
+nnoremap <F3> :w <bar>:!clear  && rustc  %:r.rs  && ./%:r <CR>
+
+
+
+
 
 inoremap " ""<left>
 inoremap ' ''<left>
@@ -55,4 +59,5 @@ Plug 'preservim/nerdtree'
 Plug 'KarimElghamry/vim-auto-comment'
 
 call plug#end()
+
 
