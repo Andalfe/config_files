@@ -1,6 +1,7 @@
 set encoding=utf-8
 
-set number relativenumber
+"set number relativenumber
+
 
 syntax enable
 
@@ -11,16 +12,18 @@ set scrolloff=7
 set backspace=indent,eol,start
 
 
-nmap <F4> <Esc>:w<CR>:!clear;python3 %<CR>
 
-imap <F4> <Esc>:w<CR>:!clear;python3 %<CR>
+""set splitbelow
+
+autocmd FileType python nmap <buffer> <c-b> <Esc>:w<CR>:!clear;python3 %<CR>
 
 
+autocmd FileType python imap <buffer> <c-b> <Esc>:w<CR>:!clear;python3 %<CR>
 
 
-nnoremap <F2> :w <bar>:!clear  && g++ -o %:r.out %  && ./%:r.out <CR>
-nnoremap <F3> :w <bar>:!clear  && rustc  %:r.rs  && ./%:r <CR>
+autocmd FileType rust nnoremap <buffer> <c-b> :w <bar>:!clear  && rustc  %:r.rs  && ./%:r <CR>
 
+autocmd FileType cpp nnoremap <buffer> <c-b> :w <bar>:!clear  && g++ -o %:r.out %  && ./%:r.out <CR>
 
 
 
@@ -44,7 +47,7 @@ set expandtab
 
 set autoindent
 
-
+set background=dark
 
 call plug#begin('~/.vim/plugged')
 
@@ -52,11 +55,15 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline-themes'
 
 Plug 'morhetz/gruvbox'
-
+"Plug 'wuelnerdotexe/vim-enfocado'
+"
+Plug 'vim-airline/vim-airline'
 
 Plug 'preservim/nerdtree'
 
 Plug 'KarimElghamry/vim-auto-comment'
+
+
 
 call plug#end()
 
