@@ -1,0 +1,7 @@
+{
+	// "cmd":["/usr/bin/google-chrome-stable","$file"],
+
+	"cmd":["/usr/bin/chromium","$file"]
+	
+	// "cmd":["/usr/bin/firefox","$file"]
+}

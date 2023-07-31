@@ -1,0 +1,13 @@
+
+{	
+	"target": "terminus_exec",
+	"cancel": "terminus_cancel_build",
+    "focus": "true",
+    "cmd": ["/usr/bin/python3", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+
+
+
+

@@ -11,7 +11,7 @@
     [
         {
             "name": "Run",
-            "shell_cmd": "g++ \"${file}\" -o \"${file_path}/${file_base_name}\" -std=c++11 && \"${file_path}/${file_base_name}\""
+            "shell_cmd": "./make.sh"
         }
     ]
 } 

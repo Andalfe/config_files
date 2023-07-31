@@ -1,0 +1,13 @@
+
+
+
+
+{
+	"cmd": ["node", "$file", "$file_base_name"],
+	"working_dir": "${project_path:${folder}}",
+	// "cmd":["/usr/bin/google-chrome-stable","$file"],
+	"target": "terminus_exec",
+	"cancel": "terminus_cancel_build",
+    // "focus": "true",
+	"selector": ["source.js"]
+}
