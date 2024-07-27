@@ -70,8 +70,6 @@ autocmd FileType c nnoremap <buffer> <c-b> <Esc> :w <bar>:!clear  && gcc -o %:r.
 
 
 
-
-
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ( ()<left>
