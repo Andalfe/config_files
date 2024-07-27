@@ -1,0 +1,12 @@
+{
+	// "cmd":["/usr/bin/google-chrome-stable","$file"],
+	// "cmd":["/usr/bin/chromium","$file"]
+	// "cmd":["/usr/bin/chromium","--enable-chrome-browser-cloud-management","$file"]
+	// "cmd":["/usr/bin/firefox","$file"]
+
+
+	"cmd":["/usr/bin/thorium-browser","index.html"],
+	
+}
+
+

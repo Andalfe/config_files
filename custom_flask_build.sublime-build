@@ -1,0 +1,22 @@
+{
+
+
+
+
+	"working_dir": "${project_path:${folder}}",
+	"env":{ "venv": "${file_path}"},
+
+	// with debugger on
+	"shell_cmd": ". venv/bin/activate && export FLASK_APP=${file} && export FLASK_DEBUG=1 && flask run",
+
+
+	// with debugger off
+	// "shell_cmd": ". venv/bin/activate && export FLASK_APP=${file} && export FLASK_DEBUG=0 && flask run",
+
+	// "cmd": ["set FLASK_DEBUG=1 0"],
+
+	"selector": "source.py",
+	"file_regex": "^\\s*File \"(...*?)\", line ([0-9]*)",
+
+	
+}

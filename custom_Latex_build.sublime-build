@@ -1,0 +1,11 @@
+
+
+
+{
+    "cmd": ["rm -rf `biber --cache` && latexmk -pdf -xelatex -silent -output-directory=output -interaction=nonstopmode $file_name | grep -i -E \"warn|!\" && open output/$file_base_name.pdf"],
+    "shell": true,
+    // "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/:/usr/local/texlive/2014/bin/x86_64-darwin/",
+    "file_regex": "^(…*?):([0-9]*):?([0-9]*)",
+    "selector": "text.tex.latex"
+}
+

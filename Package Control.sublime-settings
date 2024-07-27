@@ -1,0 +1,18 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"gruvbox",
+		"JavaScript Console",
+		"LaTeXTools",
+		"Package Control",
+		"PyScript",
+		"SQLPlus",
+		"SQLTools",
+		"Terminus",
+		"View In Browser",
+	],
+}

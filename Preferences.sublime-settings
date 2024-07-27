@@ -1,0 +1,33 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"font_size": 11,
+
+	"spell_check": true,
+	"added_words":
+	[
+		"Sophis",
+		"Scholes",
+		"approver",
+		"matplotlib",
+		"pyplot",
+		"pygame",
+		"numpy",
+		"randn",
+		"plt",
+		"np",
+	],
+	"ignored_words":
+	[
+		"3f",
+		"datetime",
+		"dt",
+		"f'π",
+		"myage",
+		"pyscript",
+		"strftime",
+	],
+	"color_scheme": "gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
+}

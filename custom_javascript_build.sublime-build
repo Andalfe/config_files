@@ -4,6 +4,7 @@
 
 {
 	"cmd": ["node", "$file", "$file_base_name"],
+	"file_patterns": ["*.js"],
 	"working_dir": "${project_path:${folder}}",
 	// "cmd":["/usr/bin/google-chrome-stable","$file"],
 	"target": "terminus_exec",
@@ -11,3 +12,7 @@
     // "focus": "true",
 	"selector": ["source.js"]
 }
+
+
+
+

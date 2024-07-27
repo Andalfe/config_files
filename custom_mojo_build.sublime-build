@@ -1,0 +1,12 @@
+
+{	
+	"target": "terminus_exec",
+	"cancel": "terminus_cancel_build",
+    "focus": "true",
+    "cmd": ["/home/andy/.modular/pkg/packages.modular.com_mojo/bin/mojo", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    // "working_dir": "${file_path}",
+    "selector": "source.mojo"
+}
+
+
