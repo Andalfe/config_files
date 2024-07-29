@@ -2,7 +2,7 @@
 
 
 "set noswapfile
-set scrolloff=7
+"set scrolloff=7
 
 
 set backspace=indent,eol,start
