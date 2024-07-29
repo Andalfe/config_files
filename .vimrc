@@ -1,7 +1,7 @@
 
 
 
-"set noswapfile
+set noswapfile
 set scrolloff=7
 
 
