@@ -4,8 +4,6 @@
 set noswapfile
 set scrolloff=7
 
-"set noswapfile
-"set scrolloff=7
 
 
 set backspace=indent,eol,start
