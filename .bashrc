@@ -94,6 +94,13 @@ alias l='ls -CF'
 alias lk='ll -d */'
 alias cl='clear'
 
+alias install='sudo pacman -S'
+alias update='sudo pacman -Syu --noconfirm'
+alias uninstall='sudo pacman -Rcns'
+
+# the below will only work when you run  'sudo pacman -S wmctrl'
+alias ontop='wmctrl -r :ACTIVE: -b add,above'
+alias notontop='wmctrl -r :ACTIVE: -b remove,above'
 
 
 
