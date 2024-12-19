@@ -1,0 +1,9 @@
+# for this to work in browser you need to replace the contents of the below
+
+/usr/share/icons/default/index.theme
+
+
+with 
+
+[Icon Theme]
+Inherits=Amiga-Classic-Red
