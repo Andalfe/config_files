@@ -1,33 +1,20 @@
 {
+
+
 	"ignored_packages":
 	[
 		"Vintage",
 	],
-	"font_size": 11,
+	"theme": "gruvbox.sublime-theme",
+	"index_files": false,
+	"color_scheme": "Packages/gruvbox/gruvbox (Dark) (Medium).sublime-color-scheme",
+	
+	
+	"font_face": "Fira Code",
+	"font_size": 8,
+	// "font_options": ["liga"],
+	"font_options": ["no_liga","no_clig", "no_calt"],
+	
+	"update_check": false,
 
-	"spell_check": true,
-	"added_words":
-	[
-		"Sophis",
-		"Scholes",
-		"approver",
-		"matplotlib",
-		"pyplot",
-		"pygame",
-		"numpy",
-		"randn",
-		"plt",
-		"np",
-	],
-	"ignored_words":
-	[
-		"3f",
-		"datetime",
-		"dt",
-		"f'π",
-		"myage",
-		"pyscript",
-		"strftime",
-	],
-	"color_scheme": "gruvbox (Dark) (Hard) NDC.sublime-color-scheme",
 }

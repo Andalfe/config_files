@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[.filter(${1:}$SELECTION);${0}]]></content>    
+    <tabTrigger>.filter</tabTrigger>    
+    <scope>text.plain, source.js</scope>
+</snippet>

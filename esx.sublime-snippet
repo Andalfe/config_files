@@ -1,0 +1,5 @@
+<snippet>
+    <content><![CDATA[= () =>{}]]></content>    
+    <tabTrigger>esx</tabTrigger>    
+    <scope>text.plain, source.js</scope>
+</snippet>

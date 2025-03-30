@@ -1,15 +1,10 @@
-
-
-
 {
-  "selector": "source.ts",
-  "cmd": ["ts-node", "$file"],
-   "file_regex": "^(.+?) \\((\\d+),(\\d+)\\)(: .+)$",
-   "line_regex": "\\((\\d+),(\\d+)\\)",
-   "osx": {
-     "path": "/usr/local/bin/"
-   }
+    // "shell_cmd": "tsc --target ES6 \"$file\" && node \"${file_base_name}.js\"",
+    // "shell_cmd": "tsc \"$file\" && node \"${file_base_name}.js\"",
+    "shell_cmd": "tsc && node \"${file_base_name}.js\"",
+    "file_patterns": ["*.ts"],
+    "working_dir": "$file_path",
+    "target": "terminus_exec",
+    "cancel": "terminus_cancel_build",
+    "selector": "source.ts"
 }
-
-
-// "cmd": ["tsc", "$file"],

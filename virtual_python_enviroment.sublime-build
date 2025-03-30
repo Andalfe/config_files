@@ -1,0 +1,14 @@
+
+{	
+    "target": "terminus_exec",
+    "cancel": "terminus_cancel_build",
+    "focus": "false",
+    "cmd": ["/home/andy/Documents/code/LTSM/myenv/bin/python3.9", "-u", "$file"],
+    "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+    "selector": "source.python"
+}
+
+
+
+
+

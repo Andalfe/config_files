@@ -1,16 +1,23 @@
 
-{	
-	"target": "terminus_exec",
-	"cancel": "terminus_cancel_build",
-    "focus": "true",
-    "cmd": ["/usr/local/go/bin/go", "run","-v", "$file"],
-    // "cmd": ["/usr/local/go/bin/go", "build", "$file"],
+// {	
+// 	"target": "terminus_exec",
+// 	"cancel": "terminus_cancel_build",
+//     "focus": "true",
+//     "cmd": ["/usr/local/go/bin/go", "run","-v", "$file"],
+//     // "cmd": ["/usr/local/go/bin/go", "build", "$file"],
 
-    // "cmd": ["/snap/bin/go", "run", "$file"],
+//     // "cmd": ["/snap/bin/go", "run", "$file"],
+//     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+//     "selector": "source.go"
+// }
+
+
+
+
+{
+    "cancel": "terminus_cancel_build",
+    // "focus": "false",
+    "shell_cmd": "go run ${file}",
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
     "selector": "source.go"
 }
-
-
-
-
